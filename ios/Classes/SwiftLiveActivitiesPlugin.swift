@@ -188,13 +188,13 @@ public class SwiftLiveActivitiesPlugin: NSObject, FlutterPlugin, FlutterStreamHa
   
   @available(iOS 16.1, *)
   func createActivity(data: [String: Any], removeWhenAppIsKilled: Bool, staleIn: Int?, result: @escaping FlutterResult) {
-    let center = UNUserNotificationCenter.current()
+    /*let center = UNUserNotificationCenter.current()
     center.requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
       
       if let error = error {
         result(FlutterError(code: "AUTHORIZATION_ERROR", message: "authorization error", details: error.localizedDescription))
       }
-    }
+    }*/
 
     
     let liveDeliveryAttributes = LiveActivitiesAppAttributes()
